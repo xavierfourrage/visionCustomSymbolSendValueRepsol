@@ -1,0 +1,44 @@
+#asset{
+    
+    width: 203px;
+    vertical-align: middle;
+}
+
+#attributeName{
+    border: 1px solid; 
+    width: 203px; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+#select{
+    border: 1px solid; 
+    width: 71px; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+#elementName{
+    border: 1px solid; 
+    width: 200px;
+    vertical-align: middle;
+}
+
+#currentValue{
+    border: 1px solid;
+     width: 100px;
+     vertical-align: middle;
+}
+
+#newValue{
+    vertical-align: middle;
+    border: 1px solid; 
+    width: 100px;
+}
+
+#checkbox{
+    vertical-align: middle;
+    width: 70px;
+    text-align: center;
+    border:1px solid;
+}
