@@ -10,7 +10,7 @@
 	    	return {
 	    		DataShape: 'Table',
 		        Height: 174,
-		        Width: 879,
+		        Width: 906,
 				defaultTimestamp: '*',
 				bgColor: "#239a23",
 				ButtonTextColor: "#fff",
@@ -23,6 +23,8 @@
 				showFriendlyAttName: false,
 				showCurrentValue: true,
 				valColWidth: 100,
+				elementColWitdh:200,
+				attributeColWidth:201,								
 				streamFriendlyNames: []
 			};
 		},
@@ -63,8 +65,8 @@
 			
 		};
 		scope.runtimeData.streamList = [];
-		scope.isAllSelected = false;
-		scope.isBtnEnabled = false;
+		// scope.isAllSelected = false;
+		scope.isBtnEnabled = true;
 		scope.config.DataSources = scope.symbol.DataSources;
 		scope.records = [];
 		
