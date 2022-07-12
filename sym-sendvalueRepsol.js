@@ -1,4 +1,4 @@
-// devolopper/contributor: xavier.fourrage@aveva.com
+// devolopper/contributor: https://github.com/xavierfourrage
 
 (function (PV) {
 	'use strict';
@@ -27,7 +27,7 @@
 				valColWidth: 100,
 				elementColWitdh:200,
 				attributeColWidth:201,
-				textAlign:"middle",	
+				textAlign:"center",	
 				textSize: "large",
 				cellHeight:35,							
 				streamFriendlyNames: []
