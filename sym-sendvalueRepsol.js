@@ -1,3 +1,5 @@
+// devolopper/contributor: xavier.fourrage@aveva.com
+
 (function (PV) {
 	'use strict';
 	var definition = {
@@ -24,7 +26,10 @@
 				showCurrentValue: true,
 				valColWidth: 100,
 				elementColWitdh:200,
-				attributeColWidth:201,								
+				attributeColWidth:201,
+				textAlign:"middle",	
+				textSize: "large",
+				cellHeight:35,							
 				streamFriendlyNames: []
 			};
 		},

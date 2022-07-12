@@ -1,6 +1,6 @@
 <div style="display: flex;" class="table-responsive" >
     <div>
-        <table style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor,'width': config.assetColWidth}">
+        <table style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor,'font-size':config.textSize,'width': config.assetColWidth, 'height':config.cellHeight}">
             <tr>               
                 <td id="asset"></td>           
             </tr>
@@ -8,7 +8,7 @@
     </div>
     <div style="display: flex;">
 
-        <table ng-repeat="stream in records[0]"  style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor, 'width': config.attributeColWidth}">
+        <table ng-repeat="stream in records[0]"  style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor, 'width': config.attributeColWidth,'font-size':config.textSize, 'height':config.cellHeight}">
             <tr>             
                 <td id="attributeName">{{stream.FriendlyName}}</td>          
             </tr>
@@ -28,15 +28,15 @@
         <div style="display: flex;">
              <div style="display: flex;">
                  
-                 <table  class="table-responsive" style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor, 'width': config.assetColWidth}">
+                 <table  class="table-responsive" style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor, 'width': config.assetColWidth,'font-size':config.textSize, 'height':config.cellHeight}">
                      <tr>
-                         <td id="elementName">{{streams[0].Element}}</td>             
+                         <td id="elementName" ng-style="{'text-align': config.textAlign}">{{streams[0].Element}}</td>             
                      </tr>
                  </table>
              </div>
              <div style="display: flex;">
      
-                 <table ng-repeat="stream in streams"  style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor, 'width': config.attributeColWidth}">
+                 <table ng-repeat="stream in streams"  style="border-collapse: collapse; height: 35px;" ng-style="{'color':config.TextColor, 'width': config.attributeColWidth,'font-size':config.textSize, 'height':config.cellHeight}">
                      <tr>
                          
                          <td id="currentValue">{{stream.CurrentValue}} {{stream.UOM}}</td>
@@ -58,9 +58,10 @@
         </div>
      </div>
 
-    <div style="max-width:1010px;">
+    <div>
         <button ng-click="sendValues()" ng-disabled="!isBtnEnabled" ng-style="{ 'background-color': config.bgColor,
         'color': config.ButtonTextColor,
+        'font-size':config.textSize,       
         'width': config.btnWidth, 
         'height': config.btnHeight, 
         'text-shadow': '0 -1px 0 rgba(0,0,0,.25)',

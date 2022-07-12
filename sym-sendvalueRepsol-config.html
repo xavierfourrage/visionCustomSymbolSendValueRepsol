@@ -4,7 +4,37 @@
 		
 		<div role="region"> 
 			<div class="config-option-format">
-				<pv-color-picker colorkeyword="Text" ng-model="config.TextColor" config="config"></pv-color-picker>
+				<pv-color-picker colorkeyword="Table color" ng-model="config.TextColor" config="config"></pv-color-picker>
+			</div>	
+			<div class="config-option-single-row" style="margin-left:20px; font-size: 14px; ">
+				<div class="config-label" style="font-size: 14px;">Element Text Alignment</div>
+				<form action="/action_page.php">
+					 <input type="radio" id="text-align-left" name="radio" ng-model="config.textAlign" value="left">
+					 <label for="text-align-left">Left</label><br>
+					 <input type="radio" id="text-align-center" name="radio" ng-model="config.textAlign" value="center">
+					 <label for="text-align-center">Center</label><br>
+					 <input type="radio" id="text-align-right" name="radio" ng-model="config.textAlign" value="right">
+					 <label for="text-align-right">Right</label><br><br>					  
+					</form> 
+			</div>	
+			<div class="config-option-single-row" style="margin-left:20px; font-size: 14px; ">
+				<div class="config-label" style="font-size: 14px;">Text Size</div>
+				<form action="/action_page.php">
+					<input type="radio" id="xx-small" name="radio" ng-model="config.textSize" value="xx-small">
+					<label for="small">xx-Small</label><br>
+					<input type="radio" id="x-small" name="radio" ng-model="config.textSize" value="x-small">
+					<label for="small">x-Small</label><br>
+					<input type="radio" id="small" name="radio" ng-model="config.textSize" value="small">
+					<label for="small">Small</label><br>
+					<input type="radio" id="medium" name="radio" ng-model="config.textSize" value="medium">
+					<label for="medium">Medium</label><br>
+					<input type="radio" id="large" name="radio" ng-model="config.textSize" value="large">
+					<label for="large">Large</label><br>		
+					<input type="radio" id="x-large" name="radio" ng-model="config.textSize" value="x-large">
+					<label for="large">x-Large</label><br>
+					<input type="radio" id="large" name="radio" ng-model="config.textSize" value="xx-large">
+					<label for="xx-large">xx-Large</label><br>			  
+				</form> 
 			</div>	
 		</div>
     </li>
@@ -24,6 +54,10 @@
 			<div class="config-option-single-row" style="margin-left:20px; font-size: 14px; ">
 				<div class="config-label" style="font-size: 14px;">Value Width</div>
 				<input type="range" ng-model="config.valColWidth" step="1" min="50" max="200" style="width:100px; height:100%; float: right; margin-right:35px;" title="{{config.valColWidth}}">
+			</div>	
+			<div class="config-option-single-row" style="margin-left:20px; font-size: 14px; ">
+				<div class="config-label" style="font-size: 14px;">Cell height</div>
+				<input type="range" ng-model="config.cellHeight" step="1" min="10" max="60" style="width:100px; height:100%; float: right; margin-right:35px;" title="{{config.cellHeight}}">
 			</div>	
 		</div>
     </li>
